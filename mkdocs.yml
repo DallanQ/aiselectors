@@ -1,10 +1,10 @@
-site_name: aisoup
-repo_url: https://github.com/DallanQ/aisoup
-site_url: https://DallanQ.github.io/aisoup
+site_name: aiselectors
+repo_url: https://github.com/DallanQ/aiselectors
+site_url: https://DallanQ.github.io/aiselectors
 site_description: BeautifulSoup extended with prompts to extract data and calls to Playwright to make it fast to write reliable web agents.
 site_author: Dallan Quass
 edit_uri: edit/main/docs/
-repo_name: DallanQ/aisoup
+repo_name: DallanQ/aiselectors
 copyright: Maintained by <a href="https://DallanQ.com">Florian</a>.
 
 nav:
@@ -15,9 +15,9 @@ plugins:
   - mkdocstrings:
       handlers:
         python:
-            setup_commands:
-                - import sys
-                - sys.path.append('../')
+          setup_commands:
+            - import sys
+            - sys.path.append('../')
 theme:
   name: material
   feature:
@@ -43,9 +43,9 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/DallanQ/aisoup
+      link: https://github.com/DallanQ/aiselectors
     - icon: fontawesome/brands/python
-      link: https://pypi.org/project/aisoup
+      link: https://pypi.org/project/aiselectors
 
 markdown_extensions:
   - toc:

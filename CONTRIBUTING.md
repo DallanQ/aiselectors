@@ -1,4 +1,4 @@
-# Contributing to `aisoup`
+# Contributing to `aiselectors`
 
 Contributions are welcome, and they are greatly appreciated!
 Every little bit helps, and credit will always be given.
@@ -9,7 +9,7 @@ You can contribute in many ways:
 
 ## Report Bugs
 
-Report bugs at https://github.com/DallanQ/aisoup/issues
+Report bugs at https://github.com/DallanQ/aiselectors/issues
 
 If you are reporting a bug, please include:
 
@@ -33,7 +33,7 @@ Cookiecutter PyPackage could always use more documentation, whether as part of t
 
 ## Submit Feedback
 
-The best way to send feedback is to file an issue at https://github.com/DallanQ/aisoup/issues.
+The best way to send feedback is to file an issue at https://github.com/DallanQ/aiselectors/issues.
 
 If you are proposing a new feature:
 
@@ -44,22 +44,22 @@ If you are proposing a new feature:
 
 # Get Started!
 
-Ready to contribute? Here's how to set up `aisoup` for local development.
+Ready to contribute? Here's how to set up `aiselectors` for local development.
 Please note this documentation assumes you already have `poetry` and `Git` installed and ready to go.
 
-1. Fork the `aisoup` repo on GitHub.
+1. Fork the `aiselectors` repo on GitHub.
 
 2. Clone your fork locally:
 
 ```bash
 cd <directory_in_which_repo_should_be_created>
-git clone git@github.com:YOUR_NAME/aisoup.git
+git clone git@github.com:YOUR_NAME/aiselectors.git
 ```
 
 3. Now we need to install the environment. Navigate into the directory
 
 ```bash
-cd aisoup
+cd aiselectors
 ```
 
 If you are using `pyenv`, select a version to use locally. (See installed versions with `pyenv versions`)

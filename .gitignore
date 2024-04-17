@@ -1,4 +1,6 @@
 docs/source
+.idea/
+cache.json
 
 # From https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore
 

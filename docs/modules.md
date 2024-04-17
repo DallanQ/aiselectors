@@ -1,1 +1,1 @@
-::: aisoup.foo
+::: aiselectors.foo

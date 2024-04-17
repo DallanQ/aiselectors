@@ -1,17 +1,24 @@
 [tool.poetry]
-name = "aisoup"
+name = "aiselectors"
 version = "0.0.1"
 description = "BeautifulSoup extended with prompts to extract data and calls to Playwright to make it fast to write reliable web agents."
 authors = ["Dallan Quass <fdallan@gmail.com>"]
-repository = "https://github.com/DallanQ/aisoup"
-documentation = "https://DallanQ.github.io/aisoup/"
+repository = "https://github.com/DallanQ/aiselectors"
+documentation = "https://DallanQ.github.io/aiselectors/"
 readme = "README.md"
 packages = [
-  {include = "aisoup"}
+  {include = "aiselectors"}
 ]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0"
+playwright = "^1.42.0"
+beautifulsoup4 = "^4.12.3"
+openai = "^1.17.0"
+python-dotenv = "^1.0.1"
+lxml = {extras = ["html-clean"], version = "^5.2.1"}
+cssify = "^1.1"
+cssselect = "^1.2.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.2.0"
@@ -20,6 +27,8 @@ deptry = "^0.12.0"
 mypy = "^1.5.1"
 pre-commit = "^3.4.0"
 tox = "^4.11.1"
+jupyterlab = "^4.1.5"
+jupyter = "^1.0.0"
 
 [tool.poetry.group.docs.dependencies]
 mkdocs = "^1.4.2"
@@ -31,7 +40,7 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.mypy]
-files = ["aisoup"]
+files = ["aiselectors"]
 disallow_untyped_defs = "True"
 disallow_any_unimported = "True"
 no_implicit_optional = "True"
@@ -84,6 +93,8 @@ ignore = [
     "E501",
     # DoNotAssignLambda
     "E731",
+    # too complex
+    "C901",
 ]
 
 [tool.ruff.format]
@@ -94,7 +105,7 @@ skip_empty = true
 
 [tool.coverage.run]
 branch = true
-source = ["aisoup"]
+source = ["aiselectors"]
 
 
 [tool.ruff.per-file-ignores]

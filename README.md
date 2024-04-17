@@ -1,33 +1,35 @@
-# aisoup
+# aiselectors
 
-[![Release](https://img.shields.io/github/v/release/DallanQ/aisoup)](https://img.shields.io/github/v/release/DallanQ/aisoup)
-[![Build status](https://img.shields.io/github/actions/workflow/status/DallanQ/aisoup/main.yml?branch=main)](https://github.com/DallanQ/aisoup/actions/workflows/main.yml?query=branch%3Amain)
-[![codecov](https://codecov.io/gh/DallanQ/aisoup/branch/main/graph/badge.svg)](https://codecov.io/gh/DallanQ/aisoup)
-[![Commit activity](https://img.shields.io/github/commit-activity/m/DallanQ/aisoup)](https://img.shields.io/github/commit-activity/m/DallanQ/aisoup)
-[![License](https://img.shields.io/github/license/DallanQ/aisoup)](https://img.shields.io/github/license/DallanQ/aisoup)
+[![Release](https://img.shields.io/github/v/release/DallanQ/aiselectors)](https://img.shields.io/github/v/release/DallanQ/aiselectors)
+[![Build status](https://img.shields.io/github/actions/workflow/status/DallanQ/aiselectors/main.yml?branch=main)](https://github.com/DallanQ/aiselectors/actions/workflows/main.yml?query=branch%3Amain)
+[![codecov](https://codecov.io/gh/DallanQ/aiselectors/branch/main/graph/badge.svg)](https://codecov.io/gh/DallanQ/aiselectors)
+[![Commit activity](https://img.shields.io/github/commit-activity/m/DallanQ/aiselectors)](https://img.shields.io/github/commit-activity/m/DallanQ/aiselectors)
+[![License](https://img.shields.io/github/license/DallanQ/aiselectors)](https://img.shields.io/github/license/DallanQ/aiselectors)
 
-BeautifulSoup extended with prompts to extract data and calls to Playwright to make it fast to write reliable web agents.
+Human-readable prompts for selecting data from HTML.
 
-- **Github repository**: <https://github.com/DallanQ/aisoup/>
-- **Documentation** <https://DallanQ.github.io/aisoup/>
+- **Github repository**: <https://github.com/DallanQ/aiselectors/>
+- **Documentation** <https://DallanQ.github.io/aiselectors/>
 
 ## Getting started with your project
 
-First, create a repository on GitHub with the same name as this project, and then run the following commands:
+First, clone this repository.
 
-```bash
-git init -b main
-git add .
-git commit -m "init commit"
-git remote add origin git@github.com:DallanQ/aisoup.git
-git push -u origin main
-```
+Next, set python to version 3.11. If you use rtx, you can `rtx install`
 
 Finally, install the environment and the pre-commit hooks with
 
 ```bash
 make install
 ```
+
+And install playwright dependencies with
+
+```bash
+playwright install
+```
+
+Note that this command may ask you to also install some additional dependencies.
 
 You are now ready to start development on your project!
 The CI/CD pipeline will be triggered when you open a pull request, merge to main, or when you create a new release.
@@ -36,9 +38,11 @@ To finalize the set-up for publishing to PyPi or Artifactory, see [here](https:/
 For activating the automatic documentation with MkDocs, see [here](https://fpgmaas.github.io/cookiecutter-poetry/features/mkdocs/#enabling-the-documentation-on-github).
 To enable the code coverage reports, see [here](https://fpgmaas.github.io/cookiecutter-poetry/features/codecov/).
 
+## Deactivating and reactivating the environment
+
+`exit` deactivates the virtual environment; `poetry shell` reactivates it.
+
 ## Releasing a new version
-
-
 
 ---
 

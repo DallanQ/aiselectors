@@ -16,6 +16,6 @@ COPY poetry.lock pyproject.toml /code/
 RUN poetry install --no-interaction --no-ansi --no-root --no-dev
 
 # Copy Python code to the Docker image
-COPY aisoup /code/aisoup/
+COPY aiselectors /code/aiselectors/
 
-CMD [ "python", "aisoup/foo.py"]
+CMD [ "python", "aiselectors/foo.py"]
